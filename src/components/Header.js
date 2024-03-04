@@ -4,7 +4,7 @@ import "../App.css";
 function Header() {
   return (
     <header className="header">
-      <h1>Simple React Website</h1>
+      <h1>RiderSync</h1>
     </header>
   );
 }
