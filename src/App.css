@@ -48,7 +48,6 @@ body {
   justify-content: center;
   background-image: url("home_background.jpg");
   background-size: 100%;
-  min-height: 100vh; /* Ensures that the body container takes up at least the height of the viewport */
 }
 
 /* Left section styles */
