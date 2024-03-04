@@ -1,51 +1,21 @@
+/* Body.css */
+
+/* Importing the font */
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@700&display=swap");
 
-.App {
-  text-align: center;
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Mega", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* Header styles */
 .header {
   background-color: #0f0e0e;
   color: #eeeeee;
   padding: 10px;
-  text-align: left;
   font-size: 15px;
-  font-family: "Lexend Mega", sans-serif;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
@@ -60,86 +30,81 @@
   margin-right: 18px;
 }
 
+/* Footer styles */
 .footer {
   background-color: #0f0e0e;
   color: #eeeeee;
   padding: 10px 0;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   font-size: 15px;
-  font-family: "Lexend Mega", sans-serif;
   font-weight: 700;
 }
 
+/* Body container styles */
 .body-container {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   background-image: url("home_background.jpg");
-  height: 80vh;
+  background-size: 100%;
+  min-height: 100vh; /* Ensures that the body container takes up at least the height of the viewport */
 }
 
+/* Left section styles */
 .left-section {
-  flex: 1;
-  padding: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Lexend Mega", sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px; /* Add some bottom margin to separate from the right section */
 }
 
 .left-section h1 {
   font-size: 40px;
-  color: white;
   margin-bottom: 10px;
 }
 
 .left-section h2 {
   font-size: 45px;
-  color: white;
   margin-top: 0;
 }
 
 .left-section h3 {
   font-size: 25px;
-  color: white;
   margin-bottom: 10px;
 }
 
+/* Right section styles */
 .right-section {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  font-family: "Lexend Mega", sans-serif;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px; /* Add some top margin to separate from the left section */
 }
 
-/* Body.css */
-
+/* Card styles */
 .card {
   background-color: #f0f0f0;
   padding: 18px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 35%;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  width: 100%;
+  max-width: 400px; /* Limit the maximum width of the card */
+  margin-bottom: 20px;
 }
 
 .card h2 {
   font-size: 20px;
   margin-top: 0;
-  white-space: nowrap;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .card input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  box-sizing: border-box;
 }
 
 .card button {
@@ -158,30 +123,11 @@
 
 .text-container {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-input::placeholder {
-  font-family: "Lexend Mega", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  color: #999;
-}
-
-.submit-button {
-  background-color: #333;
-  color: #fff;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: "Lexend Mega", sans-serif;
-  font-size: large;
 }
