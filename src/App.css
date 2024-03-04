@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@700&display=swap");
+
 .App {
   text-align: center;
 }
@@ -37,21 +39,149 @@
   }
 }
 
-
 .header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  background-color: #0f0e0e;
+  color: #eeeeee;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Lexend Mega", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.header-title {
+  margin-left: 18px;
+}
+
+.faq {
+  margin-right: 18px;
+}
 
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #0f0e0e;
+  color: #eeeeee;
   padding: 10px 0;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
+  font-size: 15px;
+  font-family: "Lexend Mega", sans-serif;
+  font-weight: 700;
+}
+
+.body-container {
+  display: flex;
+  background-image: url("home_background.jpg");
+  height: 80vh;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Lexend Mega", sans-serif;
+}
+
+.left-section h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.left-section h2 {
+  font-size: 45px;
+  color: white;
+  margin-top: 0;
+}
+
+.left-section h3 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: "Lexend Mega", sans-serif;
+}
+
+/* Body.css */
+
+.card {
+  background-color: #f0f0f0;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 35%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-top: 0;
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #555;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+input::placeholder {
+  font-family: "Lexend Mega", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #999;
+}
+
+.submit-button {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Lexend Mega", sans-serif;
+  font-size: large;
 }
